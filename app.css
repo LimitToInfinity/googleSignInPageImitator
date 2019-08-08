@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.viewport {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 74px;
+    height: 37px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+input {
+    border-radius: 5px;
+    height: 56px;
+    width: 80%;
+}
+
+input:focus {
+    /* free attributes for focus
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 5px; */
+    outline: none;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(24, 89, 226);
+}
+
+.below {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
