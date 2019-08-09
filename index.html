@@ -9,14 +9,51 @@
 </head>
 <body>
     <main class="viewport">
-        <div class="logo">
-            <img src="./assets/google-logo.jpg" />
+        <div class="sign-in-form">
+            <div class="logo">
+                <img src="./assets/google-logo.jpg" />
+            </div>
+            <h2 class="sign-in">Sign in</h2>
+            <p class="use-account">Use your Google Account</p>
+            <!-- <label for="account-name">Email or phone</label> use this with Javascript-->
+            <input type="text" name="account-name" placeholder="Email or phone" />
+            <div class="form-text" id="forgot-email">
+                <a href="https://accounts.google.com/signin/v2/usernamerecovery?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgoogle%2Bsign%2Bin%26rlz%3D1C5CHFA_enUS852US852%26oq%3Dgoogle%2Bsign%2Bin%26aqs%3Dchrome.0.69i59j69i64j69i61l2j69i60.2030j0j1%26sourceid%3Dchrome%26ie%3DUTF-8&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                    Forgot email?
+                </a>
+            </div>
+            <div class="form-text" id="plain-text">Not your computer? Use Guest mode to sign in privately.</div>
+            <div class="form-text" id="learn-more">
+                <a href="https://support.google.com/chrome/answer/6130773?hl=en">
+                    Learn more
+                </a>
+            </div>
+            <div class="form-bottom">
+                <div class="create-account">
+                    <p>
+                        <a href="https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgoogle%2Bsign%2Bin%26rlz%3D1C5CHFA_enUS852US852%26oq%3Dgoogle%2Bsign%2Bin%26aqs%3Dchrome.0.69i59j69i64j69i61l2j69i60.2030j0j1%26sourceid%3Dchrome%26ie%3DUTF-8&hl=en&gmb=exp&biz=false&flowName=GlifWebSignIn&flowEntry=SignUp">
+                            Create account
+                        </a>
+                    </p>
+                </div>
+                <div class="next-button">
+                    <button>Next</button>
+                </div>
+            </div>
         </div>
-        <h2>Sign In</h2>
-        <p>Use your Google Account</p>
-        <!-- <label for="account-name">Email or phone</label> use this with Javascript-->
-        <input type="text" name="account-name" placeholder="Email or phone" />
-        <div class="below"><p>Create account</p><button>Next</button></div>
+        <footer>
+            <details>
+                <summary>English (United States) ▼</summary>
+                <p>
+                    These are languages
+                </p>
+            </details>
+            <div class="footer-links">
+                <div class="footer-link">Help</div>
+                <div class="footer-link">Privacy</div>
+                <div class="footer-link">Terms</div>
+            </div>
+        </footer>
     </main>
 </body>
 </html>

@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
+}
+
+h2, p {
+    margin: 0;
+}
+
+.sign-in {
+    padding-top: 16px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Nunito Sans, sans-serif;
+}
+
+.use-account {
+    padding-top: 8px;
 }
 
 .viewport {
@@ -8,9 +29,20 @@ body {
     align-items: center;
 }
 
+.sign-in-form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(210, 212, 216);
+    border-radius: 10px;
+    padding: 48px 40px 36px;
+}
+
 .logo {
     width: 74px;
-    height: 37px;
 }
 
 .logo img {
@@ -20,7 +52,13 @@ body {
 input {
     border-radius: 5px;
     height: 56px;
-    width: 80%;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(210, 212, 216);
+    margin-top: 32px;
+    padding: 13px 15px;
+    font-size: 16.4px;
 }
 
 input:focus {
@@ -32,11 +70,97 @@ input:focus {
     outline: none;
     border: solid;
     border-width: 1px;
-    border-color: rgb(24, 89, 226);
+    border-color: rgb(23, 90, 226);
 }
 
-.below {
+a {
+    color: rgb(23, 90, 226);
+    text-decoration: none;
+}
+
+.form-text {
+    align-self: flex-start;
+    color: rgb(23, 90, 226);
+}
+
+#forgot-email {
+    padding: 9px 0 3px;
+}
+
+#plain-text {
+    color: rgb(76, 80, 85);
+    margin-top: 32px;
+    padding-top: 9px;
+}
+
+#learn-more {
+    padding-bottom: 3px;
+}
+
+.form-bottom {
     display: flex;
     justify-content: space-between;
-    width: 500px;
+    width: 100%;
+    margin-left: -8px;
+    margin-top: 32px;
+    min-height: 48px;
+    padding-bottom: 20px;
 }
+
+.create-account {
+    align-self: center;
+}
+
+.next-button {
+    text-align: right;
+}
+
+button {
+    cursor: pointer;
+    background-image: radial-gradient(circle farthest-side,#3367d6,#3367d6 80%,rgba(51,103,214,0) 100%);
+    background: #1a73e8;
+    color: #fff;
+    font: 400 11px system-ui;
+    /* padding: 1px 7px 2px; */
+    border: none;
+    border-radius: 3px;
+    min-width: 88px;
+    min-height: 36px;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-image: initial; */
+}
+
+button:hover {
+    background: #2b7be3;
+    box-shadow: 0 1px 2px #2b7be392;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    padding-top: 24px;
+}
+
+details {
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    color: rgb(100, 100, 100);    
+}
+
+.footer-link {
+    padding: 5px 15px;
+    cursor: pointer;
+}    
+
+details > summary::-webkit-details-marker {
+    display: none;
+  }
